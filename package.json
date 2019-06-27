@@ -1,0 +1,37 @@
+{
+  "name": "nextcloud-router",
+  "version": "0.0.6",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "babel ./lib --out-dir dist --extensions '.ts,.tsx' --source-maps && tsc --emitDeclarationOnly",
+    "check-types": "tsc",
+    "extract-l10n": "node build/extract-l10n.js",
+    "dev": "babel ./lib --out-dir dist --extensions '.ts,.tsx' --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nextcloud"
+  ],
+  "author": "Christoph Wurst",
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "core-js": "^3.1.4",
+    "i18next": "^17.0.4",
+    "moment": "^2.24.0",
+    "nextcloud-l10n": "0.0.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-typescript": "^7.3.3",
+    "browserslist-config-nextcloud": "0.0.1",
+    "gettext-extractor": "^3.4.3",
+    "typescript": "^3.5.2"
+  },
+  "browserslist": [
+    "extends browserslist-config-nextcloud"
+  ]
+}
