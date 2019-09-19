@@ -1,4 +1,4 @@
-import * as moment from 'moment'
+import moment from 'moment'
 import { getLocale, translate } from 'nextcloud-l10n'
 
 function t(text: string): string {
