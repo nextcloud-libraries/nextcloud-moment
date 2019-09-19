@@ -10,5 +10,6 @@
             "dom"
         ],
         "noImplicitAny": false,
+        "esModuleInterop": true
     }
 }
