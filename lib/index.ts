@@ -1,5 +1,5 @@
 import moment from 'moment'
-import { getLocale, translate } from 'nextcloud-l10n'
+import { getLocale, translate } from '@nextcloud/l10n'
 
 function t(text: string): string {
     return translate('nextcloud-moment', text)
