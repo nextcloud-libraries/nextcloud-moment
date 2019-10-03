@@ -34,7 +34,7 @@
     "@babel/preset-typescript": "7.3.3",
     "babel-jest": "24.9.0",
     "browserslist-config-nextcloud": "0.0.1",
-    "gettext-extractor": "3.4.3",
+    "gettext-extractor": "3.5.2",
     "jest": "24.9.0",
     "typescript": "3.5.2"
   },
