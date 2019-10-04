@@ -23,20 +23,20 @@
   },
   "dependencies": {
     "@nextcloud/l10n": "0.2.0",
-    "core-js": "3.1.4",
-    "i18next": "17.0.4",
+    "core-js": "3.2.1",
+    "i18next": "17.0.18",
     "moment": "2.24.0"
   },
   "devDependencies": {
-    "@babel/cli": "7.4.4",
+    "@babel/cli": "7.6.2",
     "@babel/core": "7.6.2",
     "@babel/preset-env": "7.6.2",
-    "@babel/preset-typescript": "7.3.3",
+    "@babel/preset-typescript": "7.6.0",
     "babel-jest": "24.9.0",
     "browserslist-config-nextcloud": "0.0.1",
-    "gettext-extractor": "3.4.3",
+    "gettext-extractor": "3.5.2",
     "jest": "24.9.0",
-    "typescript": "3.5.2"
+    "typescript": "3.6.3"
   },
   "browserslist": [
     "extends browserslist-config-nextcloud"
