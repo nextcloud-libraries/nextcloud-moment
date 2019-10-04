@@ -9,7 +9,8 @@
     "check-types": "tsc",
     "extract-l10n": "node build/extract-l10n.js",
     "dev": "babel ./lib --out-dir dist --extensions '.ts,.tsx' --watch",
-    "test": "jest"
+    "test": "jest",
+    "test:watch": "jest --watchAll"
   },
   "keywords": [
     "nextcloud"

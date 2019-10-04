@@ -17,6 +17,36 @@ test('seconds ago', () => {
     //expect(moment().fromNow()).toBe('seconds ago')
 })
 
-test('locale', () => {
-    expect(moment().locale()).toBe('en')
+describe('locale', () => {
+
+    let locale
+
+    beforeEach(() => {
+        locale = moment.locale()
+    })
+
+    afterEach(() => {
+        moment.locale(locale)
+    })
+
+    test('locale', () => {
+        expect(moment().locale()).toBe('en')
+    })
+
+    test('locale 2', () => {
+        expect(moment.locale()).toBe('en')
+    })
+
+    test('works with custom locale - underscore', () => {
+        moment.locale('de_AT')
+
+        expect(moment.locale()).toBe('de-at')
+    })
+
+    test('works with custom locale - dash', () => {
+        moment.locale('de-AT')
+
+        expect(moment.locale()).toBe('de-at')
+    })
+
 })
