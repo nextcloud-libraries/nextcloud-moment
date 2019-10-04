@@ -7,10 +7,13 @@ function t(text: string): string {
 
 moment.locale(getLocale())
 
+
+/*
+TODO: make it work
 moment.updateLocale(
-    getLocale(),
+    getLocale(), // moment.locale()?
     {
-        parentLocale: getLocale(),
+        parentLocale: getLocale(), // moment.locale()?
         relativeTime: Object.assign(
             // @ts-ignore
             moment.localeData(getLocale())._relativeTime,
@@ -19,5 +22,6 @@ moment.updateLocale(
             }
         )
     })
+*/
 
 export default moment
