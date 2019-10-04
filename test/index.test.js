@@ -13,8 +13,7 @@ test('from now', () => {
 })
 
 test('seconds ago', () => {
-    // TODO: fix
-    //expect(moment().fromNow()).toBe('seconds ago')
+    expect(moment().fromNow()).toBe('seconds ago')
 })
 
 describe('locale', () => {
