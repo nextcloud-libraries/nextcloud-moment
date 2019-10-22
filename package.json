@@ -33,13 +33,13 @@
     "@babel/core": "7.6.4",
     "@babel/preset-env": "7.6.3",
     "@babel/preset-typescript": "7.6.0",
+    "@nextcloud/browserslist-config": "^1.0.0",
     "babel-jest": "24.9.0",
-    "browserslist-config-nextcloud": "0.1.0",
     "gettext-extractor": "3.5.2",
     "jest": "24.9.0",
     "typescript": "3.6.4"
   },
   "browserslist": [
-    "extends browserslist-config-nextcloud"
+    "extends @nextcloud/browserslist-config"
   ]
 }
