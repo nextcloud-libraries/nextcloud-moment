@@ -24,7 +24,7 @@
   },
   "dependencies": {
     "@nextcloud/l10n": "0.2.1",
-    "core-js": "3.4.7",
+    "core-js": "3.5.0",
     "i18next": "19.0.2",
     "moment": "2.24.0"
   },
