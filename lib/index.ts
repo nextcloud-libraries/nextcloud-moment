@@ -7,7 +7,6 @@ function t(text: string): string {
 
 moment.locale(getLocale())
 
-
 /*
 TODO: make it work
 moment.updateLocale(
