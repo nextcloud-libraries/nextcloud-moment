@@ -7,20 +7,17 @@ function t(text: string): string {
 
 moment.locale(getLocale())
 
-/*
-TODO: make it work
 moment.updateLocale(
-    getLocale(), // moment.locale()?
+    moment.locale(),
     {
-        parentLocale: getLocale(), // moment.locale()?
+        parentLocale: moment.locale(),
         relativeTime: Object.assign(
             // @ts-ignore
-            moment.localeData(getLocale())._relativeTime,
+            moment.localeData(moment.locale())._relativeTime,
             {
-                s: t('seconds ago'),
+                s: t('seconds'),
             }
         )
     })
-*/
 
 export default moment
