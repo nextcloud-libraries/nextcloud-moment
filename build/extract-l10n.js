@@ -20,6 +20,6 @@ extractor
     ])
     .parseFilesGlob('./lib/**/*.@(ts|js)');
 
-extractor.savePotFile('./messages.pot');
+extractor.savePotFile('./l10n/messages.pot');
 
 extractor.printStats();
