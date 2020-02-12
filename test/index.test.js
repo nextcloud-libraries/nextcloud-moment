@@ -1,51 +1,56 @@
-import moment from '../lib/index'
+import moment from '../lib/index.ts'
 
-test('export is a function', () => {
-    expect(typeof moment).toBe('function')
-})
-
-test('create instance', () => {
-    moment()
-})
-
-test('from now', () => {
-    expect(moment().fromNow()).not.toBe(undefined)
-})
-
-test('seconds ago', () => {
-    expect(moment().fromNow()).toBe('seconds ago')
-})
-
-describe('locale', () => {
-
-    let locale
-
-    beforeEach(() => {
-        locale = moment.locale()
+describe('moment', () => {
+    it('exports a function', () => {
+        expect(typeof moment).to.equal('function')
     })
 
-    afterEach(() => {
-        moment.locale(locale)
+    it('creates an instance', () => {
+        moment()
     })
 
-    test('locale', () => {
-        expect(moment().locale()).toBe('en')
+    describe('from now', () => {
+        it('shows something for from now', () => {
+            expect(moment().fromNow()).not.to.equal(undefined)
+        })
+
+        it('shows the short message seconds ago', () => {
+            expect(moment().fromNow()).to.equal('seconds ago')
+        })
     })
 
-    test('locale 2', () => {
-        expect(moment.locale()).toBe('en')
-    })
+    describe('locale', () => {
 
-    test('works with custom locale - underscore', () => {
-        moment.locale('de_AT')
+        let locale
 
-        expect(moment.locale()).toBe('de-at')
-    })
+        beforeEach(() => {
+            locale = moment.locale()
+        })
 
-    test('works with custom locale - dash', () => {
-        moment.locale('de-AT')
+        afterEach(() => {
+            moment.locale(locale)
+        })
 
-        expect(moment.locale()).toBe('de-at')
+        it('locale', () => {
+            expect(moment().locale()).to.equal('en')
+        })
+
+        it('locale 2', () => {
+            expect(moment.locale()).to.equal('en')
+        })
+
+        it('works with custom locale - underscore', () => {
+            moment.locale('de_AT')
+
+            expect(moment.locale()).to.equal('de-at')
+        })
+
+        it('works with custom locale - dash', () => {
+            moment.locale('de-AT')
+
+            expect(moment.locale()).to.equal('de-at')
+        })
+
     })
 
 })
