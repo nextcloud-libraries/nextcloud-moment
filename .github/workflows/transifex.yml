@@ -7,7 +7,7 @@ jobs:
     name: Approve
     steps:
       - uses: hmarr/auto-approve-action@v2.0.0
-        if: github.actor == 'Transifex-localization-platform[bot]'
+        if: github.actor == 'Transifex-localization-platform[bot]' || github.actor == 'transifex-integration[bot]'
         with:
           github-token: "${{ secrets.GITHUB_TOKEN }}"
   automerge:
@@ -15,7 +15,7 @@ jobs:
     name: Auto-merge
     steps:
       - uses: "pascalgn/automerge-action@ecb16453ce68e85b1e23596c8caa7e7499698a84"
-        if: github.actor == 'Transifex-localization-platform[bot]'
+        if: github.actor == 'Transifex-localization-platform[bot]' || github.actor == 'transifex-integration[bot]'
         env:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
           MERGE_LABELS: ""
