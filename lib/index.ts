@@ -1,11 +1,15 @@
 import moment from 'moment'
-import { getLocale, translate } from '@nextcloud/l10n'
+import Gettext from 'node-gettext'
+import { getLocale } from '@nextcloud/l10n'
 
-function t(text: string): string {
-    return translate('nextcloud-moment', text)
-}
+const gt = new Gettext()
 
-moment.locale(getLocale())
+const locale = getLocale()
+LOCALES.map(data => {
+    gt.addTranslations(data.locale, 'messages', data.json)
+})
+gt.setLocale(locale)
+moment.locale(locale)
 
 moment.updateLocale(
     moment.locale(),
@@ -15,7 +19,7 @@ moment.updateLocale(
             // @ts-ignore
             moment.localeData(moment.locale())._relativeTime,
             {
-                s: t('seconds'),
+                s: gt.gettext('seconds'),
             }
         )
     })
