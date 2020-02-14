@@ -20,3 +20,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           blocking-labels: do not merge
           reviewers: true
+          labels: ""
