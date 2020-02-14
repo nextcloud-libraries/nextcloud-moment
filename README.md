@@ -4,7 +4,7 @@
 [![npm](https://img.shields.io/npm/v/@nextcloud/moment.svg)](https://www.npmjs.com/package/@nextcloud/moment)
 [![Documentation](https://img.shields.io/badge/Documentation-online-brightgreen)](https://nextcloud.github.io/nextcloud-moment/)
 
-Customized moment.js for Nextcloud automatic locale detection.
+Customized [moment.js](https://momentjs.com/) for Nextcloud automatic locale detection.
 
 ## Installation
 
