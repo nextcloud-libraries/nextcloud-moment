@@ -14,9 +14,11 @@ jobs:
     runs-on: ubuntu-latest
     name: Auto-merge
     steps:
-      - name: Integration check
-        uses: squalrus/merge-bot@v0.2.0
-        with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          blocking-labels: do not merge
-          reviewers: true
+      - uses: "pascalgn/automerge-action@ecb16453ce68e85b1e23596c8caa7e7499698a84"
+        if: github.actor == 'Transifex-localization-platform[bot]' || github.actor == 'transifex-integration[bot]'
+        env:
+          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+          MERGE_LABELS: ""
+          MERGE_METHOD: "rebase"
+          MERGE_RETRIES: 10
+          MERGE_RETRY_SLEEP: 20000
