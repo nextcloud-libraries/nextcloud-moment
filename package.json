@@ -38,7 +38,7 @@
     "@babel/preset-typescript": "7.9.0",
     "@nextcloud/browserslist-config": "^1.0.0",
     "@types/node-gettext": "^2.0.1",
-    "babel-jest": "25.2.3",
+    "babel-jest": "25.2.4",
     "babel-loader": "^8.0.6",
     "chai": "^4.2.0",
     "gettext-extractor": "3.5.2",
