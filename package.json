@@ -25,7 +25,7 @@
   },
   "dependencies": {
     "@nextcloud/l10n": "1.2.3",
-    "core-js": "3.6.4",
+    "core-js": "3.6.5",
     "jed": "^1.1.1",
     "moment": "2.24.0",
     "node-gettext": "^2.0.0"
