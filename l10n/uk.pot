@@ -11,4 +11,4 @@ msgstr ""
 
 #: lib/index.ts:22
 msgid "seconds"
-msgstr "секунди"
+msgstr "секунд"
