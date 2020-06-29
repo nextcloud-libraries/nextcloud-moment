@@ -12,4 +12,4 @@ msgstr ""
 
 #: lib/index.ts:22
 msgid "seconds"
-msgstr "eilenn"
+msgstr "eilennoù"
