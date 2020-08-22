@@ -49,7 +49,7 @@
     "mochapack": "^2.0.0",
     "ts-loader": "^8.0.0",
     "typedoc": "^0.18.0",
-    "typescript": "^3.7.5",
+    "typescript": "^4.0.2",
     "webpack": "^4.41.6",
     "webpack-cli": "^3.3.11",
     "webpack-merge": "^5.0.9",
