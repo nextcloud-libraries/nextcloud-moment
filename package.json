@@ -27,7 +27,7 @@
     "@nextcloud/l10n": "1.4.1",
     "core-js": "3.6.5",
     "jed": "^1.1.1",
-    "moment": "2.28.0",
+    "moment": "2.29.0",
     "node-gettext": "^3.0.0"
   },
   "devDependencies": {
