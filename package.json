@@ -43,7 +43,7 @@
     "chai": "^4.2.0",
     "gettext-extractor": "3.5.3",
     "gettext-parser": "^4.0.2",
-    "jsdom": "^16.1.0",
+    "jsdom": "^18.0.1",
     "jsdom-global": "^3.0.2",
     "mocha": "^8.2.0",
     "mochapack": "^2.0.0",
