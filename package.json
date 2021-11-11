@@ -1,61 +1,65 @@
 {
-  "name": "@nextcloud/moment",
-  "version": "1.1.1",
-  "description": "",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "scripts": {
-    "build": "NODE_ENV=production webpack --progress --config webpack.prod.js && tsc --emitDeclarationOnly",
-    "build:doc": "typedoc --ignoreCompilerErrors --excludeNotExported --excludeExternals --out dist/doc lib && touch dist/doc/.nojekyll",
-    "check-types": "tsc",
-    "dev": "NODE_ENV=development webpack --progress --watch --config webpack.dev.js",
-    "l10n:extract": "node build/extract-l10n.js",
-    "test": "mochapack --webpack-config webpack.test.js --require test/setup.js \"test/**/*.test.js\"",
-    "test:watch": "mochapack -w --webpack-config webpack.test.js --require test/setup.js \"test/**/*.test.js\""
-  },
-  "keywords": [
-    "nextcloud"
-  ],
-  "homepage": "https://github.com/nextcloud/nextcloud-moment#readme",
-  "author": "Christoph Wurst",
-  "license": "GPL-3.0-or-later",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/nextcloud/nextcloud-moment"
-  },
-  "dependencies": {
-    "@nextcloud/l10n": "1.4.1",
-    "core-js": "3.18.2",
-    "jed": "^1.1.1",
-    "moment": "2.29.1",
-    "node-gettext": "^3.0.0"
-  },
-  "devDependencies": {
-    "@atomic-reactor/webpack-po-loader": "0.0.3",
-    "@babel/cli": "7.13.16",
-    "@babel/core": "^7.8.4",
-    "@babel/preset-env": "^7.8.4",
-    "@babel/preset-typescript": "7.13.0",
-    "@nextcloud/browserslist-config": "^2.1.0",
-    "@types/node-gettext": "^3.0.0",
-    "babel-jest": "26.6.3",
-    "babel-loader": "^8.0.6",
-    "chai": "^4.2.0",
-    "gettext-extractor": "3.5.3",
-    "gettext-parser": "^4.0.2",
-    "jsdom": "^16.1.0",
-    "jsdom-global": "^3.0.2",
-    "mocha": "^8.2.0",
-    "mochapack": "^2.0.0",
-    "ts-loader": "^8.0.0",
-    "typedoc": "^0.19.0",
-    "typescript": "^4.0.2",
-    "webpack": "^4.41.6",
-    "webpack-cli": "^4.0.0",
-    "webpack-merge": "^5.0.9",
-    "webpack-node-externals": "^2.3.0"
-  },
-  "browserslist": [
-    "extends @nextcloud/browserslist-config"
-  ]
+	"name": "@nextcloud/moment",
+	"version": "1.1.1",
+	"description": "",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"scripts": {
+		"build": "NODE_ENV=production webpack --progress --config webpack.prod.js && tsc --emitDeclarationOnly",
+		"build:doc": "typedoc --ignoreCompilerErrors --excludeNotExported --excludeExternals --out dist/doc lib && touch dist/doc/.nojekyll",
+		"check-types": "tsc",
+		"dev": "NODE_ENV=development webpack --progress --watch --config webpack.dev.js",
+		"l10n:extract": "node build/extract-l10n.js",
+		"test": "mochapack --webpack-config webpack.test.js --require test/setup.js \"test/**/*.test.js\"",
+		"test:watch": "mochapack -w --webpack-config webpack.test.js --require test/setup.js \"test/**/*.test.js\""
+	},
+	"keywords": [
+		"nextcloud"
+	],
+	"homepage": "https://github.com/nextcloud/nextcloud-moment#readme",
+	"author": "Christoph Wurst",
+	"license": "GPL-3.0-or-later",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/nextcloud/nextcloud-moment"
+	},
+	"dependencies": {
+		"@nextcloud/l10n": "1.4.1",
+		"core-js": "3.18.2",
+		"jed": "^1.1.1",
+		"moment": "2.29.1",
+		"node-gettext": "^3.0.0"
+	},
+	"devDependencies": {
+		"@atomic-reactor/webpack-po-loader": "0.0.3",
+		"@babel/cli": "7.13.16",
+		"@babel/core": "^7.8.4",
+		"@babel/preset-env": "^7.8.4",
+		"@babel/preset-typescript": "7.13.0",
+		"@nextcloud/browserslist-config": "^2.1.0",
+		"@types/node-gettext": "^3.0.0",
+		"babel-jest": "26.6.3",
+		"babel-loader": "^8.0.6",
+		"chai": "^4.2.0",
+		"gettext-extractor": "3.5.3",
+		"gettext-parser": "^4.0.2",
+		"jsdom": "^16.1.0",
+		"jsdom-global": "^3.0.2",
+		"mocha": "^8.2.0",
+		"mochapack": "^2.0.0",
+		"ts-loader": "^8.0.0",
+		"typedoc": "^0.19.0",
+		"typescript": "^4.0.2",
+		"webpack": "^4.41.6",
+		"webpack-cli": "^4.0.0",
+		"webpack-merge": "^5.0.9",
+		"webpack-node-externals": "^2.3.0"
+	},
+	"browserslist": [
+		"extends @nextcloud/browserslist-config"
+	],
+	"engines": {
+		"node": "^14.0.0",
+		"npm": "^7.0.0"
+	}
 }
