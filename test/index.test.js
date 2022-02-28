@@ -51,6 +51,11 @@ describe('moment', () => {
             expect(moment.locale()).to.equal('de-at')
         })
 
+        it('shows correct french translation', () => {
+            moment.locale('fr')
+
+            expect(moment().fromNow()).to.equal('il y a quelques secondes')
+        })
     })
 
 })
