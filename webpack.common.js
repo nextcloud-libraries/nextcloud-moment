@@ -11,7 +11,7 @@ const translations = fs
 	.filter(name => name !== 'messages.pot' && name.endsWith('.pot'))
 	.map(file => {
 		const path = './l10n/' + file
-		const locale = file.substr(0, file.length -'.pot'.length)
+		const locale = file.slice(0, -'.pot'.length)
 
 		const po = fs.readFileSync(path)
 		const json = gettextParser.po.parse(po)
