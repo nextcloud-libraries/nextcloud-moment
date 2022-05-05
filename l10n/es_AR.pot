@@ -1,0 +1,15 @@
+# 
+# Translators:
+# Ariel Graneros, 2022
+# 
+msgid ""
+msgstr ""
+"Last-Translator: Ariel Graneros, 2022\n"
+"Language-Team: Spanish (Argentina) (https://www.transifex.com/nextcloud/teams/64236/es_AR/)\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: es_AR\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: lib/index.ts:22
+msgid "seconds"
+msgstr "segundos"
