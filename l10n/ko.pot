@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Last-Translator: Brandon Han, 2021\n"
-"Language-Team: Korean (https://www.transifex.com/nextcloud/teams/64236/ko/)\n"
+"Language-Team: Korean (https://app.transifex.com/nextcloud/teams/64236/ko/)\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language: ko\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
