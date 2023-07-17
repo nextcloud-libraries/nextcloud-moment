@@ -1,11 +1,11 @@
 # 
 # Translators:
-# Roeland Jago Douma <roeland@famdouma.nl>, 2020
+# Roeland Jago Douma, 2020
 # 
 msgid ""
 msgstr ""
-"Last-Translator: Roeland Jago Douma <roeland@famdouma.nl>, 2020\n"
-"Language-Team: Dutch (https://www.transifex.com/nextcloud/teams/64236/nl/)\n"
+"Last-Translator: Roeland Jago Douma, 2020\n"
+"Language-Team: Dutch (https://app.transifex.com/nextcloud/teams/64236/nl/)\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language: nl\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
