@@ -1,13 +1,14 @@
+# 
 # Translators:
 # Yoplala <yoplala@pataraphe.net>, 2020
 # 
 msgid ""
 msgstr ""
 "Last-Translator: Yoplala <yoplala@pataraphe.net>, 2020\n"
-"Language-Team: French (https://www.transifex.com/nextcloud/teams/64236/fr/)\n"
+"Language-Team: French (https://app.transifex.com/nextcloud/teams/64236/fr/)\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language: fr\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #: lib/index.ts:22
 msgid "seconds"
