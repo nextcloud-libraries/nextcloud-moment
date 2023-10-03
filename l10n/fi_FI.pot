@@ -1,11 +1,11 @@
 # 
 # Translators:
-# Robin Lahtinen <robin.lahtinen@gmail.com>, 2020
+# John Molakvoæ <skjnldsv@protonmail.com>, 2023
 # 
 msgid ""
 msgstr ""
-"Last-Translator: Robin Lahtinen <robin.lahtinen@gmail.com>, 2020\n"
-"Language-Team: Finnish (Finland) (https://www.transifex.com/nextcloud/teams/64236/fi_FI/)\n"
+"Last-Translator: John Molakvoæ <skjnldsv@protonmail.com>, 2023\n"
+"Language-Team: Finnish (Finland) (https://app.transifex.com/nextcloud/teams/64236/fi_FI/)\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language: fi_FI\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
