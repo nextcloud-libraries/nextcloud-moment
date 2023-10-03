@@ -1,11 +1,11 @@
 # 
 # Translators:
-# ZiriSut, 2022
+# John Molakvoæ <skjnldsv@protonmail.com>, 2023
 # 
 msgid ""
 msgstr ""
-"Last-Translator: ZiriSut, 2022\n"
-"Language-Team: Kabyle (https://www.transifex.com/nextcloud/teams/64236/kab/)\n"
+"Last-Translator: John Molakvoæ <skjnldsv@protonmail.com>, 2023\n"
+"Language-Team: Kabyle (https://app.transifex.com/nextcloud/teams/64236/kab/)\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language: kab\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
