@@ -31,7 +31,7 @@
     "node-gettext": "^3.0.0"
   },
   "devDependencies": {
-    "@atomic-reactor/webpack-po-loader": "^0.0.3",
+    "@atomic-reactor/webpack-po-loader": "^5.0.1",
     "@babel/cli": "^7.17.6",
     "@babel/core": "^7.17.9",
     "@babel/preset-env": "^7.16.11",
