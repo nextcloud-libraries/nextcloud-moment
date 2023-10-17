@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## 1.2.2 – 2023-10-17
+### Changed
+- Dependency updates
+### Fixed
+- Fix relative time localization
+- Update vulnerable packages
+
 ## 1.2.1 – 2022-04-19
 ### Changed
 - Dependency updates
