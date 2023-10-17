@@ -11,17 +11,15 @@ LOCALES.map(data => {
 gt.setLocale(locale)
 moment.locale(locale)
 
-moment.updateLocale(
-    moment.locale(),
-    {
-        parentLocale: moment.locale(),
-        relativeTime: Object.assign(
-            // @ts-ignore
-            moment.localeData(moment.locale())._relativeTime,
-            {
-                s: gt.gettext('seconds'),
-            }
-        )
+// Only update the locale of moment.js if it's available. Moment.js ships more locales than we
+// track in transifex, so we prefer the included translation. Always prefer our default english
+// translation.
+if (locale === 'en' || LOCALES.find(data => data.locale === locale)) {
+    moment.updateLocale(moment.locale(), {
+        relativeTime: {
+            s: gt.gettext('seconds'),
+        },
     })
+}
 
 export default moment
