@@ -2,6 +2,7 @@ msgid ""
 msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 
-#: lib/index.ts:22
+#: lib/index.ts:16
+#: lib/index.ts:19
 msgid "seconds"
 msgstr ""
