@@ -6,14 +6,32 @@ jobs:
     runs-on: ubuntu-latest
     name: Pot check
     steps:
-    - uses: actions/checkout@master
-    - name: Set up Node
-      uses: actions/setup-node@v1
+    - name: Checkout
+      uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
+
+    - name: Read package.json node and npm engines version
+      uses: skjnldsv/read-package-engines-version-actions@8205673bab74a63eb9b8093402fd9e0e018663a1 # v2.2
+      id: versions
       with:
-        node-version: 12.x
-    - name: npm install
+        fallbackNode: '^20'
+        fallbackNpm: '^9'
+
+    - name: Set up node ${{ steps.versions.outputs.nodeVersion }}
+      uses: actions/setup-node@8f152de45cc393bb48ce5d89d36b731f54556e65 # v3
+      with:
+        node-version: ${{ steps.versions.outputs.nodeVersion }}
+
+    - name: Set up npm ${{ steps.versions.outputs.npmVersion }}
+      run: npm i -g npm@"${{ steps.versions.outputs.npmVersion }}"
+
+    - name: Install dependencies
+      env:
+        CYPRESS_INSTALL_BINARY: 0
+        PUPPETEER_SKIP_DOWNLOAD: true
       run: npm ci
-    - name: extract l10n files
+
+    - name: Extract l10n files
       run: npm run l10n:extract
+
     - name: Check l10n file changes
       run: bash -c "[[ ! \"`git status --porcelain l10n`\" ]] || ( echo 'Uncommited l10n changes. Run `npm l10n:extract`.' && git status && exit 1 )"

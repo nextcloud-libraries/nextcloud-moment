@@ -1,6 +1,6 @@
 interface Translations {
-    locale: string
-    json: object
+	locale: string
+	json: object
 }
 
-declare const LOCALES: Translations[];
+declare const LOCALES: Translations[]
