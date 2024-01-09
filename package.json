@@ -51,7 +51,7 @@
     "chai": "^4.3.6",
     "eslint": "^8.56.0",
     "gettext-extractor": "^3.5.4",
-    "gettext-parser": "^6.0.0",
+    "gettext-parser": "^7.0.1",
     "jsdom": "^23.2.0",
     "jsdom-global": "^3.0.2",
     "mocha": "^10.2.0",
