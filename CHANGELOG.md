@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## 1.3.1 - 2024-01-10
+### Fixed
+* Fixed module resolution when using webpack + babel
+
 ## 1.3.0 - 2024-01-10
 ### Enhancements
 * enh: Move package to vite for bundling + compress translations [#781](https://github.com/nextcloud-libraries/nextcloud-moment/pull/781) \([susnux](https://github.com/susnux)\)
