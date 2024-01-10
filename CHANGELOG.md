@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file.
 
+## 1.3.0 - 2024-01-10
+### Enhancements
+* enh: Move package to vite for bundling + compress translations [#781](https://github.com/nextcloud-libraries/nextcloud-moment/pull/781) \([susnux](https://github.com/susnux)\)
+
+### Changed
+* chore(package): replace .npmignore with files array [#757](https://github.com/nextcloud-libraries/nextcloud-moment/pull/757) \([st3iny](https://github.com/st3iny)\)
+* chore: Update workflows [#780](https://github.com/nextcloud-libraries/nextcloud-moment/pull/780) \([susnux](https://github.com/susnux)\)
+* fix: Adjust readme as we no longer use travis [#794](https://github.com/nextcloud-libraries/nextcloud-moment/pull/794) \([susnux](https://github.com/susnux)\)
+* Update dependencies
+* Update translations
+
 ## 1.2.2 – 2023-10-17
 ### Changed
 - Dependency updates
