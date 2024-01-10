@@ -1,6 +1,6 @@
-const { GettextExtractor, JsExtractors } = require('gettext-extractor')
+import { GettextExtractor, JsExtractors } from 'gettext-extractor'
 
-const extractor = new GettextExtractor()
+const extractor = new GettextExtractor();
 
 extractor
 	.createJsParser([
@@ -11,7 +11,7 @@ extractor
 			},
 		}),
 	])
-	.parseFilesGlob('./lib/**/*.@(ts|js)')
+	.parseFilesGlob('./lib/**/*.@(ts|js)');
 
 extractor.savePotFile('./l10n/messages.pot')
 
