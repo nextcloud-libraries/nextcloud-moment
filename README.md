@@ -1,6 +1,6 @@
 # @nextcloud/moment
 
-[![Build Status](https://travis-ci.com/nextcloud/nextcloud-moment.svg?branch=master)](https://travis-ci.com/nextcloud/nextcloud-moment)
+![Build Status](https://img.shields.io/github/actions/workflow/status/nextcloud-libraries/nextcloud-moment/lint-eslint.yml)
 [![npm](https://img.shields.io/npm/v/@nextcloud/moment.svg)](https://www.npmjs.com/package/@nextcloud/moment)
 [![Documentation](https://img.shields.io/badge/Documentation-online-brightgreen)](https://nextcloud.github.io/nextcloud-moment/)
 
