@@ -1,4 +1,4 @@
-import moment from 'moment/min/moment-with-locales.js'
+import moment from 'moment/dist/moment.js'
 import Gettext from 'node-gettext'
 import { getLocale } from '@nextcloud/l10n'
 
