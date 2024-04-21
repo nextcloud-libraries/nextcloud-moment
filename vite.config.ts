@@ -23,7 +23,6 @@ const translations = Object.fromEntries(readdirSync('./l10n')
 		]
 	}))
 
-
 export default createLibConfig({
 	index: 'lib/index.ts',
 }, {
@@ -31,9 +30,4 @@ export default createLibConfig({
 	replace: {
 		LOCALES: JSON.stringify(translations)
 	},
-	config: {
-		test: {
-			environment: 'jsdom',
-		}
-	}
 })
