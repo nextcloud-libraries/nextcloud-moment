@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## 1.3.2 - 2024-04-21
+### Changed
+* Update NPM version to LTS 10 [#863](https://github.com/nextcloud-libraries/nextcloud-moment/pull/863) \([susnux](https://github.com/susnux)\)
+* Updated development dependencies
+
 ## 1.3.1 - 2024-01-10
 ### Fixed
 * Fixed module resolution when using webpack + babel
