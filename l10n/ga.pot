@@ -1,0 +1,15 @@
+# 
+# Translators:
+# Aindriú Mac Giolla Eoin, 2024
+# 
+msgid ""
+msgstr ""
+"Last-Translator: Aindriú Mac Giolla Eoin, 2024\n"
+"Language-Team: Irish (https://app.transifex.com/nextcloud/teams/64236/ga/)\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: ga\n"
+"Plural-Forms: nplurals=5; plural=(n==1 ? 0 : n==2 ? 1 : n<7 ? 2 : n<11 ? 3 : 4);\n"
+
+#: lib/index.ts:20
+msgid "seconds"
+msgstr "soicindí"
