@@ -1,3 +1,8 @@
+<!--
+  - SPDX-FileCopyrightText: 2019 Nextcloud GmbH and Nextcloud contributors
+  - SPDX-License-Identifier: GPL-3.0-or-later
+-->
+
 # @nextcloud/moment
 
 ![Build Status](https://img.shields.io/github/actions/workflow/status/nextcloud-libraries/nextcloud-moment/lint-eslint.yml)

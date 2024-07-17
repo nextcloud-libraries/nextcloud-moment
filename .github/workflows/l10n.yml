@@ -1,3 +1,5 @@
+# SPDX-FileCopyrightText: 2020 Nextcloud GmbH and Nextcloud contributors
+# SPDX-License-Identifier: GPL-3.0-or-later
 name: L10n
 on: pull_request
 
