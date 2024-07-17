@@ -1,3 +1,7 @@
+/**
+ * SPDX-FileCopyrightText: 2019 Nextcloud GmbH and Nextcloud contributors
+ * SPDX-License-Identifier: GPL-3.0-or-later
+ */
 import moment from 'moment/min/moment-with-locales.js'
 import Gettext from 'node-gettext'
 import { getLocale } from '@nextcloud/l10n'

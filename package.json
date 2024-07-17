@@ -26,12 +26,12 @@
     "nextcloud",
     "moment"
   ],
-  "homepage": "https://github.com/nextcloud/nextcloud-moment#readme",
+  "homepage": "https://github.com/nextcloud-libraries/nextcloud-moment#readme",
   "author": "Christoph Wurst",
   "license": "GPL-3.0-or-later",
   "repository": {
     "type": "git",
-    "url": "https://github.com/nextcloud/nextcloud-moment"
+    "url": "https://github.com/nextcloud-libraries/nextcloud-moment"
   },
   "files": [
     "README.md",
