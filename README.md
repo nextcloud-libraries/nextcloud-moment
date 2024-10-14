@@ -14,7 +14,7 @@ Customized [moment.js](https://momentjs.com/) for Nextcloud automatic locale det
 
 ## Installation
 
-```
+```bash
 npm i -S @nextcloud/moment
 ```
 
@@ -26,3 +26,9 @@ import moment from '@nextcloud/moment'
 moment(1578511019).format('L')
 // -> returns date formatted in format according to user locale
 ```
+
+## Release new version
+
+ 1. Bump the package version with `npm version`
+ 2. Push version bump commit
+ 3. Create a new release with proper changelog https://github.com/nextcloud-libraries/babel-config/releases/new
