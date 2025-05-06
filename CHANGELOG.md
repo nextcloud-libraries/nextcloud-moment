@@ -7,6 +7,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## 1.3.3 – 2025-05-06
+### Fixed
+* Drop depdendency on vulnerable node-gettext
+* Dependency updates
+
 ## 1.3.2 - 2024-04-21
 ### Changed
 * Update NPM version to LTS 10 [#863](https://github.com/nextcloud-libraries/nextcloud-moment/pull/863) \([susnux](https://github.com/susnux)\)
