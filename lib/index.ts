@@ -3,8 +3,8 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import moment from 'moment/min/moment-with-locales.js'
-import Gettext from 'node-gettext'
 import { getLocale } from '@nextcloud/l10n'
+import { getGettextBuilder } from '@nextcloud/l10n/gettext'
 
 const locale = getLocale()
 const translations = LOCALES
@@ -15,9 +15,10 @@ moment.locale(locale)
 // track in transifex, so we prefer the included translation. Always prefer our default english
 // translation.
 if (locale === 'en' || locale in translations) {
-	const gt = new Gettext()
-	gt.addTranslations(locale, 'messages', translations[locale])
-	gt.setLocale(locale)
+	const gt = getGettextBuilder()
+		.setLanguage(locale)
+		.addTranslation(locale, translations[locale])
+		.build()
 
 	moment.updateLocale(moment.locale(), {
 		relativeTime: {
