@@ -20,7 +20,7 @@ describe('moment', () => {
 		})
 
 		it('shows the short message seconds ago', () => {
-			expect(moment().fromNow()).to.equal('seconds ago')
+			expect(moment().fromNow()).to.equal('a few seconds ago')
 		})
 	})
 
