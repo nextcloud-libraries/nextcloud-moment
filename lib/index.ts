@@ -15,15 +15,16 @@ moment.locale(locale)
 // track in transifex, so we prefer the included translation. Always prefer our default english
 // translation.
 if (locale === 'en' || locale in translations) {
-	const gt = getGettextBuilder()
-		.setLanguage(locale)
-		.addTranslation(locale, translations[locale])
-		.build()
+	const s = locale === 'en'
+		? 'seconds'
+		: getGettextBuilder()
+			.setLanguage(locale)
+			.addTranslation(locale, translations[locale])
+			.build()
+			.gettext('seconds')
 
 	moment.updateLocale(moment.locale(), {
-		relativeTime: {
-			s: gt.gettext('seconds'),
-		},
+		relativeTime: { s },
 	})
 }
 
