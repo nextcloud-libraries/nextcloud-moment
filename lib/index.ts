@@ -11,10 +11,17 @@ const translations = LOCALES
 
 moment.locale(locale)
 
-// Only update the locale of moment.js if it's available. Moment.js ships more locales than we
-// track in transifex, so we prefer the included translation. Always prefer our default english
-// translation.
-if (locale === 'en' || locale in translations) {
+// Always prefer our default english translation.
+if (locale === 'en') {
+	moment.updateLocale(moment.locale(), {
+		relativeTime: { s: 'seconds' },
+	})
+}
+
+// Only update the locale of moment.js if it's available.
+// Moment.js ships more locales than we track in transifex.
+// If there's a translation from transifex use it, otherwise keep the included translation.
+if (locale in translations) {
 	const gt = getGettextBuilder()
 		.setLanguage(locale)
 		.addTranslation(locale, translations[locale])
