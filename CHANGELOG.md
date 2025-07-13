@@ -7,6 +7,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## 1.3.5 - 2025-07-12
+### Fixed
+* Compativility with @nextcloud/l10n >= 1.3.4 [#1111](https://github.com/nextcloud-libraries/nextcloud-moment/pull/1111)
+
 ## 1.3.4 – 2025-05-06
 ### Fixed
 * Drop node-gettext dependency
