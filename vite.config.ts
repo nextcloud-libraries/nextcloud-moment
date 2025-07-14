@@ -3,8 +3,8 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import { createLibConfig } from '@nextcloud/vite-config'
-import { readFileSync, readdirSync } from 'node:fs'
 import { po as poParser } from 'gettext-parser'
+import { readdirSync, readFileSync } from 'node:fs'
 
 const translations = Object.fromEntries(readdirSync('./l10n')
 	.filter((name) => name !== 'messages.pot' && name.endsWith('.pot'))
@@ -23,7 +23,7 @@ const translations = Object.fromEntries(readdirSync('./l10n')
 
 		return [
 			locale,
-			json
+			json,
 		]
 	}))
 
@@ -32,6 +32,6 @@ export default createLibConfig({
 }, {
 	libraryFormats: ['es', 'cjs'],
 	replace: {
-		LOCALES: JSON.stringify(translations)
+		LOCALES: JSON.stringify(translations),
 	},
 })

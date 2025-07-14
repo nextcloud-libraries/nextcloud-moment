@@ -25,7 +25,6 @@ describe('moment', () => {
 	})
 
 	describe('locale', () => {
-
 		let locale
 
 		beforeEach(() => {
@@ -62,5 +61,4 @@ describe('moment', () => {
 			expect(moment().fromNow()).to.equal('il y a quelques secondes')
 		})
 	})
-
 })
