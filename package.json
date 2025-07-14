@@ -31,7 +31,7 @@
   "scripts": {
     "build": "vite --mode production build",
     "build:doc": "typedoc --out dist/doc lib/index.ts && touch dist/doc/.nojekyll",
-    "check-types": "tsc --noEmit",
+    "ts:check": "tsc --noEmit",
     "dev": "vite --mode development build",
     "l10n:extract": "node build/extract-l10n.js",
     "lint": "eslint",
