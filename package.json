@@ -31,33 +31,33 @@
   "scripts": {
     "build": "vite --mode production build",
     "build:doc": "typedoc --out dist/doc lib/index.ts && touch dist/doc/.nojekyll",
-    "ts:check": "tsc --noEmit",
     "dev": "vite --mode development build",
     "l10n:extract": "node build/extract-l10n.js",
     "lint": "eslint",
     "lint:fix": "eslint --fix",
     "test": "vitest run",
-    "test:watch": "vitest watch"
+    "test:watch": "vitest watch",
+    "ts:check": "tsc --noEmit"
   },
   "browserslist": [
     "extends @nextcloud/browserslist-config"
   ],
   "dependencies": {
     "@nextcloud/l10n": "^3.4.0",
-    "moment": "^2.30.1"
+    "moment": "^2.31.0"
   },
   "devDependencies": {
     "@nextcloud/browserslist-config": "^3.0.1",
-    "@nextcloud/eslint-config": "^9.0.0-rc.2",
-    "@nextcloud/vite-config": "^2.3.5",
+    "@nextcloud/eslint-config": "^9.0.1",
+    "@nextcloud/vite-config": "^2.5.4",
     "@types/node": "^24.0.3",
-    "eslint": "^9.31.0",
+    "eslint": "^10.12.0",
     "gettext-extractor": "^4.0.1",
     "gettext-parser": "^8.0.0",
     "jsdom": "^26.1.0",
     "typedoc": "^0.28.7",
     "typescript": "^5.8.3",
-    "vite": "^6.3.0",
+    "vite": "^7.3.7",
     "vitest": "^3.2.4"
   },
   "engines": {
@@ -66,13 +66,13 @@
   "devEngines": {
     "packageManager": {
       "name": "npm",
-      "onFail": "error",
-      "version": "^10.0.0"
+      "version": "^11.3.0",
+      "onFail": "error"
     },
     "runtime": {
       "name": "node",
       "onFail": "error",
-      "version": "^22.0.0"
+      "version": "^24.0.0"
     }
   }
 }
