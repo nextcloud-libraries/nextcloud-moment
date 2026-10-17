@@ -1,6 +1,6 @@
 # This workflow is provided via the organization template repository
 #
-# https://github.com/nextcloud/.github
+# https://github.com/nextcloud-libraries/.github
 # https://docs.github.com/en/actions/learn-github-actions/sharing-workflows-with-your-organization
 #
 # SPDX-FileCopyrightText: 2023-2024 Nextcloud GmbH and Nextcloud contributors
@@ -24,43 +24,18 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  changes:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      pull-requests: read
-
-    outputs:
-      src: ${{ steps.changes.outputs.src}}
-
-    steps:
-      - uses: dorny/paths-filter@ceb8a2b8f2d89434be7ff52d3de7ec3738c5cc9d # v4.0.3
-        id: changes
-        continue-on-error: true
-        with:
-          filters: |
-            src:
-              - '.github/workflows/lint-typescript.yml'
-              - 'package.json'
-              - 'package-lock.json'
-              - 'tsconfig.json'
-              - '**.ts'
-              - '**.vue'
-
   test:
     runs-on: ubuntu-latest
-
-    needs: changes
-    if: needs.changes.outputs.src != 'false'
+    name: Lint Typescript
 
     steps:
       - name: Checkout
-        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           persist-credentials: false
 
       - name: Read package.json
-        uses: nextcloud-libraries/parse-package-engines-action@122ae05d4257008180a514e1ddeb0c1b9d094bdd # v0.1.0
+        uses: nextcloud-libraries/parse-package-engines-action@39fcc545a815c353dd0a3fd8fd2ef6e59fd02b92 # v0.2.0
         id: versions
 
       - name: Set up node
@@ -74,24 +49,9 @@ jobs:
       - name: Install dependencies
         env:
           CYPRESS_INSTALL_BINARY: 0
-        run: |
-          npm ci
+        run: npm ci
 
       - name: Check types
         run: |
           npm run --if-present check-types
           npm run --if-present ts:check
-
-  summary:
-    permissions:
-      contents: none
-    runs-on: ubuntu-latest
-    needs: [changes, test]
-
-    if: always()
-
-    name: typescript-summary
-
-    steps:
-      - name: Summary status
-        run: if ${{ needs.changes.outputs.src != 'false' && needs.test.result != 'success' }}; then exit 1; fi
