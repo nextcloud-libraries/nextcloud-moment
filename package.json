@@ -50,7 +50,7 @@
     "@nextcloud/browserslist-config": "^3.0.1",
     "@nextcloud/eslint-config": "^9.0.1",
     "@nextcloud/vite-config": "^2.5.4",
-    "@types/node": "^24.0.3",
+    "@types/node": "^26.6.5",
     "eslint": "^10.13.0",
     "gettext-extractor": "^4.0.1",
     "gettext-parser": "^8.0.0",
